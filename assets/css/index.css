@@ -5,3 +5,21 @@ nav {
 .navbar-collapse {
   flex-grow: unset;
 }
+
+.background-image {
+  background-image: url('/assets/img/intro-background.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 900px;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro h1, h2, h3, h4 {
+  color: aliceblue;
+}
