@@ -1,4 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400&family=Roboto:wght@300;400&display=swap');
+/* 
+color theme
+#ffdde1
+#c8c8c8
+#92a8d1
+#084d53
+#ababab */
+
+* {
+  font-family: 'Roboto', 'Bai Jamjuree', sans-serif;
+}
+
 nav {
+  background-color: #ffdde1;
+  font-size: 18px;
+}
+
+nav .dropdown-menu {
   background-color: #ffdde1;
 }
 
@@ -7,19 +25,43 @@ nav {
 }
 
 .background-image {
+  position: relative;
+}
+
+.background-image::before {
+  filter: brightness(0.5);
+  content: '';
   background-image: url('/assets/img/intro-background.jpg');
   background-position: center;
   background-size: cover;
+  position: absolute;
   min-height: 900px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px black;
 }
 
 .intro {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+  text-align: center;
+  color: #cacaca;
+  padding-top: 200px;
 }
 
-.intro h1, h2, h3, h4 {
-  color: aliceblue;
+.btn-custom {
+  font-size: 25px;
+  background-color: #ffdde1;
+  color: #1b1b1b;
+  width: 150px;
+  margin-top: 100px;
+  box-shadow: 0 0 4px 0 #5c5c5c;
+}
+
+.btn-custom:hover {
+  background-color: #c4a9ac;
 }
