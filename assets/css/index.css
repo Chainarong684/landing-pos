@@ -1,15 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400&family=Roboto:wght@300;400&display=swap');
-/* 
-color theme
-#ffdde1
-#c8c8c8
-#92a8d1
-#084d53
-#ababab */
+
+:root {
+  /*      Theme colors        */
+  --main-pink: #ffdde1;
+  --text-light: #686666da;
+  --bg-color: #0f0f0f;
+  --white: #ffffff;
+  --midnight: #104f55;
+}
 
 * {
   font-family: 'Roboto', 'Bai Jamjuree', sans-serif;
 }
+
+/* Global-class */
+.alink {
+  color: unset;
+  text-decoration: none;
+}
+.alink:hover {
+  color: unset;
+}
+
+/*x Global-class x*/
 
 nav {
   background-color: #ffdde1;
@@ -26,6 +39,7 @@ nav .dropdown-menu {
 
 .background-image {
   position: relative;
+  min-height: 900px;
 }
 
 .background-image::before {
@@ -35,7 +49,6 @@ nav .dropdown-menu {
   background-position: center;
   background-size: cover;
   position: absolute;
-  min-height: 900px;
   top: 0px;
   right: 0px;
   bottom: 0px;
@@ -65,3 +78,71 @@ nav .dropdown-menu {
 .btn-custom:hover {
   background-color: #c4a9ac;
 }
+
+ul.navbar-nav li a {
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+ul.navbar-nav li a:hover {
+  border-bottom: 2px solid black;
+}
+
+/* footer */
+.footer {
+  background-color: #ffdde1;
+  padding: 50px 0;
+}
+
+.footer-brand {
+  flex: 0.5;
+  justify-content: center;
+}
+.footer-brand img {
+  width: 80px;
+  border-radius: 50%;
+}
+.footer-brand h4 {
+  display: inline;
+  margin-left: 25px;
+}
+.footer-brand p {
+  margin-top: 25px;
+}
+
+.footer-detail {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-sitemap {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-right ul {
+  display: flex;
+}
+.footer-right ul li {
+  padding: 0 5px;
+}
+
+.social-media ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.social-media ul li {
+  padding: 0 10px;
+  font-size: 30px;
+}
+
+/* x footer x */
