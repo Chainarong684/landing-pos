@@ -51,9 +51,17 @@ ul.navbar-nav li a:hover {
   border-bottom: 2px solid black;
 }
 
+.nav-link.active {
+  border-bottom: 2px solid black;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
 /* ----------------------------------- x x ---------------------------------- */
 
-/* ---------------------------------- intro --------------------------------- */
+/* ---------------------------------- header --------------------------------- */
 
 .background-image {
   position: relative;
@@ -85,8 +93,7 @@ ul.navbar-nav li a:hover {
   background-color: #ffdde1;
   color: #1b1b1b;
   width: 150px;
-  margin-top: 100px;
-  box-shadow: 0 0 4px 0 #5c5c5c;
+  /* box-shadow: 0 0 4px 0 #5c5c5c; */
 }
 
 .btn-custom:hover {
@@ -94,6 +101,64 @@ ul.navbar-nav li a:hover {
 }
 
 /* ----------------------------------- xx ----------------------------------- */
+
+/* ---------------------------------- intro --------------------------------- */
+
+.intro-main {
+  position: relative;
+}
+
+.intro-box {
+  margin-top: -150px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 15px 0 rgb(0 0 0 / 20%);
+  padding: 40px;
+  transition: 0.5s;
+}
+
+.intro-box:hover {
+  background-color: #ffdde1;
+  transform: translateY(-10px);
+}
+
+.intro-box h3 {
+  margin: 30px 0;
+}
+
+.intro-img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.intro-show {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  align-items: center;
+}
+
+.intro-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.intro-media img {
+  width: 50%;
+}
+
+.intro-detail {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.intro-card {
+  margin: 0 130px;
+}
+
+/* -------------------------------- x intro x ------------------------------- */
 
 /* --------------------------------- footer --------------------------------- */
 .footer {
@@ -153,3 +218,34 @@ ul.navbar-nav li a:hover {
 }
 
 /* ----------------------------------- x x ---------------------------------- */
+
+@media only screen and (max-width: 450px) {
+  .footer-brand {
+    flex: 1;
+  }
+
+  .footer-end {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-box {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .intro-box {
+    padding: 10px;
+  }
+  
+  .intro-show {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .intro-card {
+    margin: 0;
+  }
+}
