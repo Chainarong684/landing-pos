@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Chainarong684/dev/issues"
   },
-  "homepage": "https://github.com/Chainarong684/dev#readme"
+  "homepage": "https://github.com/Chainarong684/dev#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "@fortawesome/fontawesome-free": "^5.15.4"
+  }
 }

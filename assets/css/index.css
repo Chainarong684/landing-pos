@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400&family=Roboto:wght@300;400&display=swap');
 
 :root {
-  /*      Theme colors        */
+  /* ------------------------------- Theme Color ------------------------------ */
   --main-pink: #ffdde1;
   --text-light: #686666da;
   --bg-color: #0f0f0f;
@@ -13,7 +13,7 @@
   font-family: 'Roboto', 'Bai Jamjuree', sans-serif;
 }
 
-/* Global-class */
+/* --------------------------------- Global Class --------------------------------- */
 .alink {
   color: unset;
   text-decoration: none;
@@ -22,8 +22,13 @@
   color: unset;
 }
 
-/*x Global-class x*/
+.text-shadow {
+  text-shadow: 1px 1px black;
+}
 
+/* ----------------------------------- xx ----------------------------------- */
+
+/* ----------------------------- Navigation Bar ----------------------------- */
 nav {
   background-color: #ffdde1;
   font-size: 18px;
@@ -36,6 +41,19 @@ nav .dropdown-menu {
 .navbar-collapse {
   flex-grow: unset;
 }
+
+ul.navbar-nav li a {
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+ul.navbar-nav li a:hover {
+  border-bottom: 2px solid black;
+}
+
+/* ----------------------------------- x x ---------------------------------- */
+
+/* ---------------------------------- intro --------------------------------- */
 
 .background-image {
   position: relative;
@@ -53,10 +71,6 @@ nav .dropdown-menu {
   right: 0px;
   bottom: 0px;
   left: 0px;
-}
-
-.text-shadow {
-  text-shadow: 1px 1px black;
 }
 
 .intro {
@@ -79,16 +93,9 @@ nav .dropdown-menu {
   background-color: #c4a9ac;
 }
 
-ul.navbar-nav li a {
-  border-bottom: 2px solid transparent;
-  transition: 0.3s;
-}
+/* ----------------------------------- xx ----------------------------------- */
 
-ul.navbar-nav li a:hover {
-  border-bottom: 2px solid black;
-}
-
-/* footer */
+/* --------------------------------- footer --------------------------------- */
 .footer {
   background-color: #ffdde1;
   padding: 50px 0;
@@ -145,4 +152,4 @@ ul.navbar-nav li a:hover {
   font-size: 30px;
 }
 
-/* x footer x */
+/* ----------------------------------- x x ---------------------------------- */
