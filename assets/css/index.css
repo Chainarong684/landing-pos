@@ -71,7 +71,8 @@ ul.navbar-nav li a:hover {
 .background-image::before {
   filter: brightness(0.5);
   content: '';
-  background-image: url('/assets/img/intro-background.jpg');
+  background-image: url('/assets/img/background/intro-background.jpg');
+  background-image: -webkit-image-set(url('/assets/img/background/intro-background.webp') 1x);
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -86,6 +87,17 @@ ul.navbar-nav li a:hover {
   text-align: center;
   color: #cacaca;
   padding-top: 200px;
+  transition: 2s;
+  animation: fadeIntro 1000ms;
+}
+
+@keyframes fadeIntro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .btn-custom {
@@ -93,7 +105,6 @@ ul.navbar-nav li a:hover {
   background-color: #ffdde1;
   color: #1b1b1b;
   width: 150px;
-  /* box-shadow: 0 0 4px 0 #5c5c5c; */
 }
 
 .btn-custom:hover {
@@ -238,7 +249,7 @@ ul.navbar-nav li a:hover {
   .intro-box {
     padding: 10px;
   }
-  
+
   .intro-show {
     flex-direction: column;
   }
